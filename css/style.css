@@ -1483,3 +1483,117 @@ ul.insta li {
    }
 }
 
+/* Hover effects for services */
+.service_box {
+     position: relative;
+     text-align: center;
+     padding: 20px;
+     border: 2px solid #eee;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .service_box:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .service_box img {
+     max-width: 60px;
+     margin-bottom: 20px;
+     transition: transform 0.3s ease;
+ }
+ 
+ .service_box:hover img {
+     transform: scale(1.1);
+ }
+ 
+ .service_box h4 {
+     font-size: 20px;
+     margin-bottom: 15px;
+     color: #333;
+ }
+ 
+ .service_box p {
+     color: #777;
+     margin-bottom: 20px;
+ }
+ 
+ .service_box .read_more {
+     color: #007BFF;
+     font-weight: bold;
+     text-decoration: none;
+     transition: color 0.3s ease;
+ }
+ 
+ .service_box .read_more:hover {
+     color: #0056b3;
+ }
+ 
+ /* Banner customization */
+ .banner_main {
+     position: relative;
+     height: 100vh;
+     background: url('images/banner.jpg') no-repeat center center fixed;
+     background-size: cover;
+     color: white;
+ }
+ 
+ .carousel-caption {
+     top: 50%;
+     left: 10%;
+     transform: translateY(-50%);
+     text-align: left;
+ }
+ 
+ .carousel-caption h1 {
+     font-size: 3rem;
+     font-weight: bold;
+ }
+ 
+ .carousel-caption p {
+     font-size: 1.2rem;
+     line-height: 1.5;
+     margin-bottom: 20px;
+ }
+ 
+ .carousel-caption .read_more {
+     background-color: #007BFF;
+     padding: 10px 20px;
+     color: white;
+     border-radius: 5px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ }
+ 
+ /* Section background */
+ .full_bg {
+     background: #f4f4f4;
+     padding: 50px 0;
+ }
+ 
+ header .logo a {
+     font-size: 2rem;
+     color: #333;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+ }
+ 
+ header .logo a:hover {
+     color: #007BFF;
+ }
+ 
+ /* Navbar */
+ .navbar-nav .nav-item .nav-link {
+     color: #333;
+     font-size: 18px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ }
+ 
+ .navbar-nav .nav-item .nav-link:hover {
+     color: #007BFF;
+ }
+ 
