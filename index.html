@@ -438,28 +438,186 @@
       </div>
       <!-- end projects -->
       <!-- choose -->
-      <div class="choose">
+      <div class="choose_us_section">
          <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-7 ">
+            <style>
+               /* Section Styling */
+               .choose_us_section {
+                  padding: 70px 20px;
+                  background: linear-gradient(135deg, #f5f7fa, #dfe9f3);
+                  border-radius: 25px;
+                  position: relative;
+                  overflow: hidden;
+               }
+      
+               /* Decorative Elements */
+               .choose_us_section::before, .choose_us_section::after {
+                  content: '';
+                  position: absolute;
+                  border-radius: 50%;
+                  opacity: 0.3;
+               }
+               .choose_us_section::before {
+                  width: 200px;
+                  height: 200px;
+                  background: #ff6f61;
+                  top: -50px;
+                  left: -50px;
+               }
+               .choose_us_section::after {
+                  width: 300px;
+                  height: 300px;
+                  background: #5b8def;
+                  bottom: -100px;
+                  right: -100px;
+               }
+      
+               /* Title Section */
+               .choose_us_section .titlepage h2 {
+                  font-size: 42px;
+                  font-weight: bold;
+                  color: #2c3e50;
+                  margin-bottom: 20px;
+                  text-align: left;
+                  position: relative;
+               }
+               .choose_us_section .titlepage h2::after {
+                  content: "";
+                  width: 80px;
+                  height: 5px;
+                  background: #ff6f61;
+                  position: absolute;
+                  bottom: -10px;
+                  left: 0;
+               }
+               .choose_us_section .titlepage p {
+                  font-size: 18px;
+                  line-height: 1.8;
+                  color: #34495e;
+                  margin-bottom: 40px;
+               }
+      
+               /* Icon Features */
+               .choose_us_features {
+                  display: flex;
+                  gap: 20px;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+               }
+               .choose_feature_box {
+                  background: #ffffff;
+                  border-radius: 15px;
+                  padding: 20px;
+                  flex: 1;
+                  text-align: center;
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+               }
+               .choose_feature_box:hover {
+                  transform: translateY(-10px);
+                  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+               }
+               .choose_feature_icon {
+                  width: 70px;
+                  height: 70px;
+                  margin: 0 auto 15px;
+               }
+               .choose_feature_icon img {
+                  width: 100%;
+                  height: auto;
+               }
+               .choose_feature_title {
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #2c3e50;
+                  margin-bottom: 10px;
+               }
+               .choose_feature_text {
+                  font-size: 16px;
+                  color: #7f8c8d;
+               }
+      
+               /* Highlight Section */
+               .highlight_box {
+                  background: linear-gradient(135deg, #ff6f61, #ff9a8b);
+                  color: white;
+                  padding: 40px;
+                  border-radius: 20px;
+                  text-align: center;
+                  position: relative;
+               }
+               .highlight_box h3 {
+                  font-size: 28px;
+                  font-weight: bold;
+                  margin-bottom: 10px;
+               }
+               .highlight_box p {
+                  font-size: 18px;
+                  line-height: 1.5;
+               }
+               .highlight_box::after {
+                  content: "";
+                  position: absolute;
+                  top: -20px;
+                  right: -20px;
+                  width: 100px;
+                  height: 100px;
+                  background: rgba(255, 255, 255, 0.3);
+                  border-radius: 50%;
+               }
+      
+               /* Responsive Adjustments */
+               @media (max-width: 768px) {
+                  .choose_us_features {
+                     flex-direction: column;
+                     gap: 20px;
+                  }
+                  .highlight_box {
+                     margin-top: 30px;
+                  }
+               }
+            </style>
+      
+            <div class="row align-items-center">
+               <!-- Left Column: Text -->
+               <div class="col-lg-6 col-md-7">
                   <div class="titlepage">
                      <h2>Why Choose Us</h2>
-                     <p>With Krishna Ahir at the helm, we bring years of exprience, a dedicated team, and an unwavering commitment to quality in every project we undertake. From concept to completionm we aim to build structures that inspire trust and contribute to a better future.<br>Let us transform your vision into reality. Together, we build beyond expectations!</p>
-                     <div class="award">
-                        <div id="awa_ho" class="award_icon text_align_center">
-                           <i><img src="images/ch1.png" alt="#"/>
-                           </i>
-                           <strong>satisfaction</strong>
+                     <p>With Krishna Ahir at the helm, we bring years of experience, a dedicated team, and an unwavering commitment to quality in every project we undertake. From concept to completion, we aim to build structures that inspire trust and contribute to a better future. Let us transform your vision into reality. Together, we build beyond expectations!</p>
+                  </div>
+               </div>
+      
+               <!-- Right Column: Features & Highlight -->
+               <div class="col-lg-6 col-md-5">
+                  <!-- Feature Boxes -->
+                  <div class="choose_us_features">
+                     <div class="choose_feature_box">
+                        <div class="choose_feature_icon">
+                           <img src="images/ch1.png" alt="Satisfaction">
                         </div>
-                        <div id="awa_ho" class="award_icon text_align_center">
-                           <i><img src="images/ch2.png" alt="#"/></i>
-                           <strong>award</strong>
-                        </div>
-                        <div id="awa_ho" class="award_icon text_align_center">
-                           <i><img src="images/ch3.png" alt="#"/></i>
-                           <strong>Trustable</strong>
-                        </div>
+                        <div class="choose_feature_title">Satisfaction</div>
+                        <div class="choose_feature_text">Ensuring customer happiness through every step.</div>
                      </div>
+                     <div class="choose_feature_box">
+                        <div class="choose_feature_icon">
+                           <img src="images/ch2.png" alt="Award">
+                        </div>
+                        <div class="choose_feature_title">Award-Winning</div>
+                        <div class="choose_feature_text">Recognized excellence in our field of work.</div>
+                     </div>
+                     <div class="choose_feature_box">
+                        <div class="choose_feature_icon">
+                           <img src="images/ch3.png" alt="Trustable">
+                        </div>
+                        <div class="choose_feature_title">Trustable</div>
+                        <div class="choose_feature_text">A name you can rely on for quality and integrity.</div>
+                     </div>
+                  </div>
+      
+                  <!-- Highlight Section -->
+                  <div class="highlight_box mt-4">
+                     <h3>Building Dreams Together</h3>
+                     <p>Your vision, our dedication. Let's create something extraordinary!</p>
                   </div>
                </div>
             </div>
